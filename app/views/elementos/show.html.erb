@@ -1,0 +1,89 @@
+
+<center><h3>Relatório</h3></center>
+
+
+<div class="col-lg-4 col-sm-4 hero-feature text-center">
+                    <div class="thumbnail">
+                        <a href="detail.html" class="link-p">
+                            <%= image_tag("2.jpg") %>
+                        </a>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-4 hero-feature text-center">
+                    <div class="thumbnail">
+                        <a href="detail.html" class="link-p">
+                           <%= image_tag("2.jpg") %>
+                        </a>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-4 hero-feature text-center">
+                    <div class="thumbnail">
+                        <a href="detail.html" class="link-p">
+                            <%= image_tag("2.jpg") %>
+                        </a>
+                        
+                    </div>
+                </div>
+
+<table class="table table-bordered tbl-cart">
+    <thead>
+        <tr>
+            <td>Nome</td>
+            <td>Alcunha</td>
+            <td>Idade</td>
+            <td>Crimes</td>
+            <td>Estado-Atucão</td>
+            <td>Cidade-Atuação</td>
+            
+        </tr>
+    </thead>
+        <tbody>
+            <tr>
+                <td><%= @elemento.nome %></td>
+                <td><%= @elemento.alcunha %></td>
+                <td><%= @elemento.idade %></td>
+                <td><%= @elemento.crime %></td>
+                <td><%= @elemento.estado_atuacao %></td>
+                <td><%= @elemento.cidade_atuacao %></td>
+                
+            </tr>
+        </tbody>
+</table>
+
+<table class="table table-bordered tbl-cart">
+     <thead>
+        <tr>
+            <td>Condenação</td>
+            <td>Acusação</td>
+            <td>Condenado</td>
+            <td>Respode outro crime</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><%= @elemento.condenado %></td>
+            <td><%= @elemento.responde_crime %></td>
+            <td><%= @elemento.motivo_condenacao %></td>
+            <td><%= @elemento.motivo_responde %></td>
+        </tr>                            
+    </tbody>                        
+</table>
+
+<table class="table table-bordered tbl-cart">
+     <thead>
+        <tr>
+            <td>Mãe</td>
+            <td>Pai</td>
+            
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><%= @elemento.mae %></td>
+            <td><%= @elemento.pai %></td>
+        </tr>                            
+    </tbody>                        
+</table>
+

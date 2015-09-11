@@ -44,4 +44,6 @@ group :development, :test do
 end
 
 gem 'execjs'
+gem 'font-awesome-rails', '~> 4.3.0'
 gem 'therubyracer'
+gem 'kaminari'

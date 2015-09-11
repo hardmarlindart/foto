@@ -1,0 +1,128 @@
+<h2>Inserir</h2>
+
+<%= form_for(@elemento) do |f| %>
+ <% if @elemento.errors.any? %>
+ <div id="error_explanation" >
+ 	<h2><%= pluralize(@elemento.errors.count, "error")  %>
+ 		Problemas ao executar esta acao	</h2>
+
+
+ 	<ul> 
+ 		<% elemento.errors.full_menssages_each do |msg| %>
+ 		<li><%= msg %></li>
+ 	<% end %>
+ 	</ul>
+ </div>
+<% end %>
+
+
+<div class="col-lg-12 col-sm-12 hero-feature">
+					<table class="table table-bordered tbl-checkout">
+						<tbody>
+                            <tr>
+                                <td>Nome</td>
+                                <td>
+                                    <%= f.text_field :nome , :class=> "form-control"%>
+                                </td>
+                                <td>Alcunha</td>
+                                <td>
+                                	<%= f.text_field :alcunha , :class=> "form-control"%> 
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Crimes</td>
+                                <td>
+									<%= f.text_field :crime , :class=> "form-control"%> 
+                                <td>Idade</td>
+                                <td>
+                                    <%= f.text_field :idade , :class=> "form-control"%> 
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td>Estado Atuação</td>
+                                <td>
+                                    <%= f.text_field :estado_atuacao , :class=> "form-control"%> 
+                                </td>
+
+                                <td>Cidades Atuação</td>
+                                <td>
+                                    <%= f.text_field :cidade_atuacao , :class=> "form-control"%> 
+                                </td>
+                             <tr>   
+                                <td>Condenado</td>
+                                <td>
+                                    <%= f.text_field :condenado , :class=> "form-control"%> 
+                                </td>
+
+                                <td>Motivo condenação</td>
+                                <td>
+                                    <%= f.text_field :motivo_condenacao , :class=> "form-control"%> 
+                                </td>
+                            </tr>
+
+                            <tr>   
+                                <td>Responde</td>
+                                <td>
+                                    <%= f.text_field :responde_crime , :class=> "form-control"%> 
+                                </td>
+
+                                <td>Motivo-Respode</td>
+                                <td>
+                                    <%= f.text_field :motivo_responde , :class=> "form-control"%> 
+                                </td>
+                            </tr>
+
+                            <tr>   
+                                <td>Mãe</td>
+                                <td>
+                                    <%= f.text_field :mae , :class=> "form-control"%> 
+                                </td>
+
+                                <td>Pai</td>
+                                <td>
+                                    <%= f.text_field :pai , :class=> "form-control"%> 
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td>Country</td>
+                                <td>
+                                    <select class="form-control">
+                                        <option value=""> --- Please Select --- </option>
+                                        <option value="244">Aaland Islands</option>
+                                      </select>
+                                </td>
+                                <td class="tujuan">Region / State:</td>
+                                <td class="jne">
+                                    <select class="form-control"><option value=""> --- Please Select --- </option><option value="3513">Aberdeen</option><option value="3514">Aberdeenshire</option><option value="3515">Anglesey</option><</select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Observação</td>
+                                <td colspan="3">
+                                    <%= f.text_area :observacao , :class=> "form-control"%> 
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Address</td>
+                                <td colspan="3">
+                                    <textarea name="" class="form-control"></textarea>
+                                </td>
+                            </tr>
+
+                        </tbody>
+					</table>
+                    
+					<div class="btn-group btns-cart">
+						<%= f.submit " Inserir dados ", :class => "btn btn-primary" %>
+						<% end %>	
+						
+					</div>
+
+	            </div>
+
+	            
